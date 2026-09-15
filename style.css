@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,600&display=swap');
+
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    scroll-behavior:smooth;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    color: inherit;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+   
+}
+
+/*Nav par*/
+
+.navpar{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    transition: 0.4s ease;
+}
+.navpar ul li a{
+    border-bottom: 3px solid transparent;
+}
+.navpar ul li a:hover,.navpar ul li a.active{
+    border-bottom: 3px solid #b74b4b;
+}
+.navpar h2{
+    font-width: 900;
+}
+.navpar h2 span{
+    color: #b74b4b;
+}
+
+.navpar ul{
+    display: flex;
+
+}
+
+.navpar ul li{
+    margin-left: 39px;
+}
+.navpar ul li a:hover,.navpar ul li a.active{
+    color: #b74b4b;
+}
+
+
+.navpar .btn{
+    border:#b74b4b solid 2px;
+    padding: 6px 20px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.navpar .btn:hover{
+    background-color: #b74b4b;
+    color: rgba(0, 0, 0, 0.961);
+}
+
+/*nav par end*/
+
+/*hero start*/
+
+.hero{
+   margin-top: 70px; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   
+   
+} 
+
+.hero .hero-text{
+   
+    width: 100%;
+}
+
+.hero .hero-text .p1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero .hero-text h1{
+    font-size: 50px;
+}
+
+
+.hero .hero-text .p1{
+     color: #b74b4b;
+     margin-bottom: 10px;
+     font-size: 35px;
+}
+
+.hero .hero-text h1{
+    font-size: 50px;
+    margin-bottom: 7px;
+}
+
+.hero .hero-text h1 span{
+    color:#b74b4b;
+    margin-bottom: 12px;
+}
+
+.hero .hero-text .p2{
+    color:#bbbbbb;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.hero .hero-text .btns{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero .hero-text .btns .btn1{
+    border: none;
+    background-color:#b74b4b;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.hero .hero-text .btns .btn1:hover{
+    background-color: transparent;
+    color: white;
+    border: 3px solid #b74b4b;
+}
+
+.hero .hero-text .btns .btn2{
+    border: solid #b74b4b 3px;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.hero .hero-text .btns .btn2:hover{
+    background-color: #b74b4b;
+    color: black;
+}
+
+.hero .hero-imge{
+    width: 40%;
+}
+
+.hero .hero-imge img{
+    width: 450px;
+    height: 400px;
+    border: solid 2px #b74b4b;
+    border-radius: 50%;
+    transition: 0.4s;
+    transform: scale(0.75);
+    
+}
+
+.hero .hero-imge img:hover{
+    transform: scale(0.9);
+    border-radius: 70%;
+}  
+
+/* ============
+about section
+========== */
+.about{
+    text-align: center;
+    margin-top: 250px;
+    
+}
+
+.about .about-text h2{
+    font-size: 30px;
+    margin-bottom:5px;
+}
+.about .about-text .p1{
+    color: #b74b4b;
+    font-size: 18px;
+}
+
+.about .about-text h2 span{
+    color: #b74b4b;
+}
+.about .about-text .p2{
+    color: #cccc;
+    font-size: 17px;
+}
+
+
+
+
+/* ============
+section title
+========== */
+
+.section-title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.section-title p{
+    color: #b74b4b;
+    font-size: 18px;
+    
+}
+.section-title h2 span{
+    color: #b74b4b;
+}
+
+/* ============
+section skills
+=======*/
+    
+.skills{
+    margin-top: 350px;
+    margin-bottom: 200px;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 25px;
+    
+}
+
+
+.skill-card{
+    background-color: #181818;
+    border:1px solid #292929;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.skill-card:hover{
+    border-color: #b74b4b;
+    transform:translateY(-10px)
+}
+
+.skill-card h3{
+    color: #b74b4b;
+    margin-bottom: 10px;
+
+}
+
+.skill-card p{
+    color: #cccc;
+    margin-bottom: 15px;
+}
+
+.skill-bar{
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.skill-bar span{
+   background-color: #b74b4b;
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+}
+.skill-bar .html{
+    width: 90%;
+}
+
+.skill-bar .css{
+    width: 70%;
+}
+
+.skill-bar .js{
+    width: 85%;
+}
+
+.skill-bar .bootstrap{
+    width: 75%;
+}
+
+.skill-card small{
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+}
+
+/* ============
+projects
+=======*/
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 25px;
+}
+
+.project-card{
+    background-color: #181818;
+    border:1px solid #292929;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+    text-align: center;
+}
+.project-card:hover{
+    border-color: #b74b4b;
+    transform:translateY(-10px)
+}
+.project-card h3{
+    color: #b74b4b;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.project-card img{
+    width: 100%;
+    height: 190 px;
+}
+
+.project-card p{
+    color: #cccc;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.project-card a{
+    border: 2px solid #b74b4b;
+    padding: 5px 18px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.project-card a:hover{
+    background-color: #b74b4b;
+    color: black;
+    transition: 0.4s;
+}
+
+/* ============
+start contact
+=======*/
+.contact{
+    margin-top: 350px;
+    padding-bottom: 80px;
+}
+
+
+.contact-contaner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+   /* align-items: start;*/
+    
+}
+
+.contact-info{
+    text-align: left;
+}
+
+.contact-info h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact-info > p{
+    color:#ccc;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+.contact-item{
+    margin-bottom: 20px;
+}
+.contact-item h4{
+    color: #b74b4b;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.contact-item p{
+    color: #ccc;
+    font-size: 16px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.contact-form input, .contact-form textarea{
+width: 96%;
+padding: 10px;
+background-color: #181818;
+border: none;
+outline: none;
+color: #fff;
+font-size: 15px;
+border: 1px solid #292929;
+border-radius: 8px;
+transition: 0.3s;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+    border-color: #b74b4b;
+}
+.contact-form textarea{
+    resize:vertical;
+}
+.contact-form button{
+    padding: 10px 20px;
+    background-color: #b74b4b;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-form button:hover{
+    background-color: transparent;
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+}
+/* ============
+end contact
+=======*/
+
+/* ============
+start responsive
+=======*/ 
+
+@media (max-width: 768px) {
+    .navpar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+  
+  
+    .hero .hero-imge{
+        width: 100%;
+    }
+    .skill-container{
+        grid-template-columns: 1fr;
+    }
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .contact-contaner{
+        grid-template-columns: auto;
+    }
+    
+}
+
+
+/* ============
+small mobile
+=======*/
+@media (max-width: 480px) {
+    .contaner{
+        padding: 0 15px;
+    }
+    .navpar h2{
+        font-size: 24px;
+    }
+    .navpar .btn{
+        padding: 8px 16px;
+    }
+    .hero .hero-imge{
+        width: 100%;
+    }
+    .hero .hero-text h1{
+        font-size: 32px;
+    }
+    .hero .hero-text .p2{
+        font-size: 16px;
+    }
+    .skill-card{
+        padding: 22px;
+    }
+    .contact-info h3{
+        font-size: 25px;
+    }
+
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
