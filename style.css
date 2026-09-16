@@ -441,9 +441,11 @@ end contact
 /* ============
 start responsive
 =======*/ 
-
-@media (max-width: 768px) {
-    .navpar{
+@media(max-width: 768px){
+   .container{
+    width: 70%;
+   }
+.navpar{
         flex-direction: column;
         gap: 20px;
     }
@@ -468,11 +470,13 @@ start responsive
     
 }
 
+ 
+
 
 /* ============
 small mobile
 =======*/
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .contaner{
         padding: 0 15px;
     }
@@ -499,8 +503,7 @@ small mobile
     }
 
 
-}
-    
+}   
 
 
 
