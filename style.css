@@ -447,9 +447,10 @@ start responsive
     }
 }
 @media(max-width:900px){
-     .navpar{
+     .navpar .navpar ul{
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        padding:20px 10px;
     }
     .hero{
         flex-direction: column-reverse;
@@ -474,7 +475,7 @@ start responsive
 
 }
 @media(max-width:500px){
- .navpar{
+ .navpar .navpar ul{
         flex-direction: column;
         gap: 15px;
     }
@@ -489,9 +490,9 @@ start responsive
 }
 
 @media(max-width:450px){
- .navpar{
+ .navpar .navpar ul{
         flex-direction: column;
-        gap: 10x;
+        gap: 10px;
     }
     .hero .hero-imge{
     width: 100%;
@@ -517,7 +518,7 @@ start responsive
 }
 
 @media(max-width:450px){
-    .navpar{
+    .navpar .navpar ul{
         padding:0 5%;
         box-sizing: border-box;
     }
