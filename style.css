@@ -441,7 +441,29 @@ end contact
 /* ============
 start responsive
 =======*/ 
-
+@media screen and (max-width: 768px){
+    .navpar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero .hero-imge img{
+        width: 300px;
+        height: 300px;
+    }
+    .skill-container{
+        grid-template-columns: repeat(1,auto);
+    }
+    .projects-container{
+        grid-template-columns: repeat(1,auto);
+    }
+    .contact-contaner{
+        grid-template-columns: repeat(1,auto);
+    }
+}
 
 
 
