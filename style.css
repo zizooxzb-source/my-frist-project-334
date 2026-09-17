@@ -18,7 +18,7 @@ a{
     color: inherit;
 }
 .container{
-    max-width: 1000px;
+    width: 80%;
     margin: auto;
    
 }
@@ -441,11 +441,13 @@ end contact
 /* ============
 start responsive
 =======*/ 
-@media(max-width: 768px){
-   .container{
-    width: 70%;
-   }
-.navpar{
+@media(max-width:1250px){
+    .container{
+        width: 90%;
+    }
+}
+@media(max-width:900px){
+     .navpar{
         flex-direction: column;
         gap: 20px;
     }
@@ -453,8 +455,8 @@ start responsive
         flex-direction: column-reverse;
         text-align: center;
     }
-  
-  
+ 
+ 
     .hero .hero-imge{
         width: 100%;
     }
@@ -467,49 +469,59 @@ start responsive
     .contact-contaner{
         grid-template-columns: auto;
     }
-    
-}
-
  
 
 
-/* ============
-small mobile
-=======*/
-@media (max-width: 600px) {
-    .contaner{
-        padding: 0 15px;
-    }
-    .navpar h2{
-        font-size: 24px;
-    }
-    .navpar .btn{
-        padding: 8px 16px;
+}
+@media(max-width:500px){
+ .navpar{
+        flex-direction: column;
+        gap: 15px;
     }
     .hero .hero-imge{
-        width: 100%;
+    width: 100%;
+}
+.hero{
+
+  flex-direction: column-reverse;
+        text-align: center;
+}
+}
+
+@media(max-width:450px){
+ .navpar{
+        flex-direction: column;
+        gap: 10x;
     }
-    .hero .hero-text h1{
-        font-size: 32px;
+    .hero .hero-imge{
+    width: 100%;
+}
+.hero{
+
+  flex-direction: column-reverse;
+        text-align: center;
+}
+
+.hero .hero-text{
+   
+    width: 70%;
+}
+.hero .hero-imge img{
+    width: 400px;
+    height: 300;
+}
+.hero .hero-text .btns .btn2{
+    padding: 8px 8px;
+}
+
+}
+
+@media(max-width:450px){
+    .navpar{
+        padding:0 5%;
+        box-sizing: border-box;
     }
-    .hero .hero-text .p2{
-        font-size: 16px;
-    }
-    .skill-card{
-        padding: 22px;
-    }
-    .contact-info h3{
-        font-size: 25px;
-    }
-
-
-}   
-
-
-
-
-
-
+}
 
 
 
